@@ -1,26 +1,6 @@
 #!/bin/bash
 
 
-##### ADD NEW REPOS #####
-
-
-##### UPDATE AND UPGRADE #####
-
-#sudo apt-get -y --force-yes update
-#sudo apt-get -y --force-yes upgrade
-
-##### INSTALL APPS FROM REPOS
-
-#sudo apt-get -y install \
-#	git gitk gitg curl libcurl3 scapy 
-	
-	
-##### INSTALL INDIVIDUAL APPS #####
-
-
-
-
-##### CHOOSE ADDITIONAL APPS TO INSTALL #####
 
 # Install VM tools from Kali repo  
 	echo -e "\e[1;31mThis option will install VMWare Tools!\e[0m"
@@ -68,8 +48,8 @@
 
 ##### UPDATE AND UPGRADE EVERYTHING IN KALI #####
 echo "<><><><><> First, Lets Get All Up To Date. <><><><><>" 
-sudo apt-get -y --force-yes update
-sudo apt-get -y --force-yes upgrade
+#sudo apt-get -y --force-yes update
+#sudo apt-get -y --force-yes upgrade
 echo "<><><><><> Your Are All Up To Date. <><><><><>"
 #####Run Install Scripts#####
 #install needed repos 
