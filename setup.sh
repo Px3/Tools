@@ -3,17 +3,15 @@
 
 
 # Install VM tools from Kali repo  
-	echo -e "\e[1;31mThis option will install VMWare Tools!\e[0m"
 	echo -e "\e[1;31mFOR VMWARE BUILDS ONLY!\e[0m"
-	echo -e ""
-	echo -e "Do you want to install it ? (Y/N)"
+	echo -e "Do you want to install VM Tools ? (Y/N)"
 			read install
 			if [[ $install = Y || $install = y ]] ; then	
 				echo -e "\033[31m====== Adding Open VM Tools To the List ======\033[m"
 				sleep 2
 				echo 'sudo apt-get -y install open-vm-tools-desktop fuse \' >> aptstall.sh
 			else
-				echo -e "\e[32m[-] Ok,maybe later !\e[0m"
+				echo -e "\e[32m[-] Ok,!\e[0m"
 			fi
 #install Google Chrome 
 	echo -e "\e[1;31mThis option will install Google Chrome!\e[0m"
@@ -47,27 +45,24 @@
 			fi
 
 ##### UPDATE AND UPGRADE EVERYTHING IN KALI #####
-echo "<><><><><> First, Lets Get All Up To Date. <><><><><>" 
+echo "<><><><><> Lets Get All Up To Dated.	<><><><><>" 
 #sudo apt-get -y --force-yes update
 #sudo apt-get -y --force-yes upgrade
-echo "<><><><><> Your Are All Up To Date. <><><><><>"
+echo "<><><><><> Your Are All Up To Date.	<><><><><>"
 #####Run Install Scripts#####
 #install needed repos 
-echo "<><><><><> Adding Repos. <><><><><>"
+echo "<><><><><> Adding Repos.   		<><><><><>"
 sudo sh ./repos.sh
-echo "<><><><><> Repos Added, Now On To The Next Step... <><><><><>"
-
+echo "<><><><><> Repos Added, Next Step... 	<><><><><>"
 #install from GIT
-echo "<><><><><> Running Script For Github apps. <><><><><>"
+echo "<><><><><> Running Script For Github apps	<><><><><>"
 sudo sh ./gitstall.sh 
-echo "<><><><><> Finished With Just The Github Apps. <><><><><>"
-
+echo "<><><><><> Finished With The Github Apps. <><><><><>"
 #Install from apt-get
-echo "<><><><><> Now Installing The Other Apps With apt-get <><><><><>"
+echo "<><><><><> Installing The Other Apps	<><><><><>"
 sudo sh ./aptstall 
-echo "<><><><><> Done With All Apps. <><><><><>" 
-
+echo "<><><><><> Done With All Apps. 		<><><><><>" 
 #clean Things up
-echo "<><><><><> Cleaning Up The Unneeded Mess <><><><><>"
+echo "<><><><><> Cleaning Up The Unneeded Mess 	<><><><><>"
 sudo apt autoremove
-echo " <><><><><> You Are All Ready To Go. <><><><><>
+echo " <><><><><> You Are All Ready To Go. 	<><><><><>"
