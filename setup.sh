@@ -26,7 +26,7 @@
 			fi
 #install
 echo "_____________________________________________________"
-	echo -e "Install Scapy"
+	echo -e "Install Scapy? (Y/n)"
 			read install
 			if [[ $install = Y || $install = y ]] ; then	
 				echo -e "Adding Scapy to the list"
@@ -53,7 +53,7 @@ sudo sh ./gitstall.sh
 echo "<><><><><> Finished With The Github Apps. <><><><><>"
 #Install from apt-get
 echo "<><><><><> Installing The Other Apps	<><><><><>"
-sudo sh ./aptstall 
+sudo sh ./aptstall.sh 
 echo "<><><><><> Done With All Apps. 		<><><><><>" 
 #clean Things up
 echo "<><><><><> Cleaning Up The Unneeded Mess 	<><><><><>"
