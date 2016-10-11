@@ -25,6 +25,7 @@
 	else
 		echo "--- Not Added --- "
 	fi
+	
 #GOOGLE CHROME INSTALL 
 	echo "_____________________________________________________"
 	echo ""
@@ -37,6 +38,7 @@
 	else
 		echo "--- Not Added ---"
 	fi
+	
 #SCAPY INSTALL
 	echo "_____________________________________________________"
 	echo ""
@@ -48,6 +50,7 @@
 	else
 		echo "--- Not Added ---"
 	fi
+	
 #EMPIRE INSTALL
 	echo "_____________________________________________________"
 	echo ""
@@ -59,6 +62,7 @@
 	else
 		echo "--- Not Added ---"
 	fi
+	
 #SET INSTALL 
 	echo "_____________________________________________________"
 	echo ""
@@ -70,11 +74,43 @@
 	else
 		echo "--- Not Added ---"
 	fi
-#
 
-#
+#Install PTF
+	echo "_____________________________________________________"
+	echo ""
+	echo "[ INSTALL PENTEST FRAMEWORK? (Y/n)] "
+	read install
+	if [[ $install = Y || $install = y ]] ; then	
+		echo "+++ Adding P.T.F. to the list +++"
+		echo 'https://github.com/trustedsec/ptf.git' >> gitstall.sh
+	else
+		echo "--- Not Added ---"
+	fi
 
-#
+#Install SSHuttle
+	echo "_____________________________________________________"
+	echo ""
+	echo "[ INSTALL SSHUTTLE? (Y/n)] "
+	read install
+	if [[ $install = Y || $install = y ]] ; then	
+		echo "+++ Adding SSHUTTLE to the list +++"
+		echo 'https://github.com/pahaz/sshuttle.git' >> gitstall.sh
+		echo './setup.py install' >> gitstall.sh
+	else
+		echo "--- Not Added ---"
+	fi
+
+#Install GRR
+	echo "_____________________________________________________"
+	echo ""
+	echo "[ INSTALL GRR (Google Rapid Response? (Y/n)] "
+	read install
+	if [[ $install = Y || $install = y ]] ; then	
+		echo "+++ Adding GRR to the list +++"
+		echo 'https://github.com/google/grr.git' >> gitstall.sh
+	else
+		echo "--- Not Added ---"
+	fi
 
 #
 
@@ -128,8 +164,8 @@
 	echo "|     Cleaning Up The Mess                                                        |"
 	echo " ================================================================================= "
 	echo ""
-#sudo apt-get -y --force-yes update
-#sudo apt-get -y --force-yes upgrade
+sudo apt-get -y --force-yes update
+sudo apt-get -y --force-yes upgrade
 	echo "<><><><><> All Updates Complete.          <><><><><>" 
 
 #####Run Install Scripts#####
@@ -216,3 +252,5 @@ sudo sh ./aptstall.sh
 	echo ""
 sudo apt autoremove
 	echo "<><><><><> You Are All Ready To Go.       <><><><><>"
+	
+	Echo 
