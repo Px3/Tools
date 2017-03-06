@@ -1,17 +1,17 @@
 #!/bin/bash
 
 	echo ""
-	echo " ================================================================================= "
-	echo "| Selecting Applications                                                          |"
-	echo "|     Selecting Repositories                                                      |"
-	echo "|     Selecting Setting And Tweaks                                                |"
-	echo "|     Getting Updates                                                             |"
-	echo "|     Adding Selected Repositories                                                |"
-	echo "|     Adding Applications with Git                                                |"
-	echo "|     Adding Applicaitons with Apt-Get                                            |"
-	echo "|     Adding Tweaks and Settings                                                  |"
-	echo "|     Cleaning Up The Mess                                                        |"
-	echo " ================================================================================= "
+	echo " ============================================================================== "
+	echo "| SELECT APPLICATIONS                                                          |"
+	echo "|     Select Repositories                                                      |"
+	echo "|     Select Setting And Tweaks                                                |"
+	echo "|     Get Updates                                                              |"
+	echo "|     Add Selected Repositories                                                |"
+	echo "|     Add Tools From Git                                                       |"
+	echo "|     Add Tools From Apt-Get                                                   |"
+	echo "|     Add Tweaks and Settings                                                  |"
+	echo "|     Clean Up The Mess                                                        |"
+	echo " ============================================================================== "
 	echo ""
 
 # Install VM tools from Kali repo  
@@ -111,58 +111,98 @@
 	else
 		echo "--- Not Added ---"
 	fi
-
-#
-
-#
-
-#
-
-#
-
+	
+#In
+	echo "_____________________________________________________"
 	echo ""
-	echo " ================================================================================= "
-	echo "|     Selecting Applications                                                      |"
-	echo "| Selecting Repositories                                                          |"
-	echo "|     Selecting Setting And Tweaks                                                |"
-	echo "|     Getting Updates                                                             |"
-	echo "|     Adding Selected Repositories                                                |"
-	echo "|     Adding Applications with Git                                                |"
-	echo "|     Adding Applicaitons with Apt-Get                                            |"
-	echo "|     Adding Tweaks and Settings                                                  |"
-	echo "|     Cleaning Up The Mess                                                        |"
-	echo " ================================================================================= "
+	echo "[ INSTALL NAME (Y/n)] "
+	read install
+	if [[ $install = Y || $install = y ]] ; then	
+		echo "+++ Adding NAME to the list +++"
+		echo 'https://github.com/' >> gitstall.sh
+	else
+		echo "--- Not Added ---"
+	fi
+	
+#In
+	echo "_____________________________________________________"
+	echo ""
+	echo "[ INSTALL NAME (Y/n)] "
+	read install
+	if [[ $install = Y || $install = y ]] ; then	
+		echo "+++ Adding NAME to the list +++"
+		echo 'https://github.com/' >> gitstall.sh
+	else
+		echo "--- Not Added ---"
+	fi
+
+#In
+	echo "_____________________________________________________"
+	echo ""
+	echo "[ INSTALL NAME (Y/n)] "
+	read install
+	if [[ $install = Y || $install = y ]] ; then	
+		echo "+++ Adding NAME to the list +++"
+		echo 'https://github.com/' >> gitstall.sh
+	else
+		echo "--- Not Added ---"
+	fi
+	
+	#In
+	echo "_____________________________________________________"
+	echo ""
+	echo "[ INSTALL NAME (Y/n)] "
+	read install
+	if [[ $install = Y || $install = y ]] ; then	
+		echo "+++ Adding NAME to the list +++"
+		echo 'https://github.com/' >> gitstall.sh
+	else
+		echo "--- Not Added ---"
+	fi
+	
+	echo ""
+	echo " ============================================================================== "
+	echo "|     Select Applications                                                      |"
+	echo "| SELECT REPOSITORIES                                                          |"
+	echo "|     Select Setting And Tweaks                                                |"
+	echo "|     Get Updates                                                              |"
+	echo "|     Add Selected Repositories                                                |"
+	echo "|     Add Tools From Git                                                       |"
+	echo "|     Add Tools From Apt-Get                                                   |"
+	echo "|     Add Tweaks and Settings                                                  |"
+	echo "|     Clean Up The Mess                                                        |"
+	echo " ============================================================================== "
 	echo ""
 
 #TWEAKS TO USE 
 	echo ""
-	echo " ================================================================================= "
-	echo "|     Selecting Applications                                                      |"
-	echo "|     Selecting Repositories                                                      |"
-	echo "| Selecting Setting And Tweaks                                                    |"
-	echo "|     Getting Updates                                                             |"
-	echo "|     Adding Selected Repositories                                                |"
-	echo "|     Adding Applications with Git                                                |"
-	echo "|     Adding Applicaitons with Apt-Get                                            |"
-	echo "|     Adding Tweaks and Settings                                                  |"
-	echo "|     Cleaning Up The Mess                                                        |"
-	echo " ================================================================================= "
+	echo " ============================================================================== "
+	echo "|     Select Applications                                                      |"
+	echo "|     Select Repositories                                                      |"
+	echo "| SELECT SETTINGS AND TWEAKS                                                   |"
+	echo "|     Get Updates                                                              |"
+	echo "|     Add Selected Repositories                                                |"
+	echo "|     Add Tools From Git                                                       |"
+	echo "|     Add Tools From Apt-Get                                                   |"
+	echo "|     Add Tweaks and Settings                                                  |"
+	echo "|     Clean Up The Mess                                                        |"
+	echo " ============================================================================== "
 	echo ""
 
 
 ##### UPDATE AND UPGRADE EVERYTHING IN KALI #####
 	echo ""
-	echo " ================================================================================= "
-	echo "|     Selecting Applications                                                      |"
-	echo "|     Selecting Repositories                                                      |"
-	echo "|     Selecting Setting And Tweaks                                                |"
-	echo "| Getting Updates                                                                 |"
-	echo "|     Adding Selected Repositories                                                |"
-	echo "|     Adding Applications with Git                                                |"
-	echo "|     Adding Applicaitons with Apt-Get                                            |"
-	echo "|     Adding Tweaks and Settings                                                  |"
-	echo "|     Cleaning Up The Mess                                                        |"
-	echo " ================================================================================= "
+	echo " ============================================================================== "
+	echo "|     Select Applications                                                      |"
+	echo "|     Select Repositories                                                      |"
+	echo "|     Select Setting And Tweaks                                                |"
+	echo "| GET UPDATES                                                                  |"
+	echo "|     Add Selected Repositories                                                |"
+	echo "|     Add Tools From Git                                                       |"
+	echo "|     Add Tools From Apt-Get                                                   |"
+	echo "|     Add Tweaks and Settings                                                  |"
+	echo "|     Clean Up The Mess                                                        |"
+	echo " ============================================================================== "
 	echo ""
 sudo apt-get -y --force-yes update
 sudo apt-get -y --force-yes upgrade
@@ -172,82 +212,82 @@ sudo apt-get -y --force-yes upgrade
 
 #install needed repos 
 	echo ""
-	echo " ================================================================================= "
-	echo "|     Selecting Applications                                                      |"
-	echo "|     Selecting Repositories                                                      |"
-	echo "|     Selecting Setting And Tweaks                                                |"
-	echo "|     Getting Updates                                                             |"
-	echo "| Adding Selected Repositories                                                    |"
-	echo "|     Adding Applications with Git                                                |"
-	echo "|     Adding Applicaitons with Apt-Get                                            |"
-	echo "|     Adding Tweaks and Settings                                                  |"
-	echo "|     Cleaning Up The Mess                                                        |"
-	echo " ================================================================================= "
+	echo " ============================================================================== "
+	echo "|     Select Applications                                                      |"
+	echo "|     Select Repositories                                                      |"
+	echo "|     Select Setting And Tweaks                                                |"
+	echo "|     Get Updates                                                              |"
+	echo "| ADDING SELECTED REPOSITORIES                                                 |"
+	echo "|     Add tools from git                                                       |"
+	echo "|     Add Tools From Apt-Get                                                   |"
+	echo "|     Add Tweaks and Settings                                                  |"
+	echo "|     Cleaning Up The Mess                                                     |"
+	echo " ============================================================================== "
 	echo ""
 sudo sh ./repos.sh
 	echo "<><><><><> Selected Repos Added           <><><><><>"
 
 #install from GIT
 	echo ""
-	echo " ================================================================================= "
-	echo "|     Selecting Applications                                                      |"
-	echo "|     Selecting Repositories                                                      |"
-	echo "|     Selecting Setting And Tweaks                                                |"
-	echo "|     Getting Updates                                                             |"
-	echo "|     Adding Selected Repositories                                                |"
-	echo "| Adding Applications with Git                                                    |"
-	echo "|     Adding Applicaitons with Apt-Get                                            |"
-	echo "|     Adding Tweaks and Settings                                                  |"
-	echo "|     Cleaning Up The Mess                                                        |"
-	echo " ================================================================================= "
+	echo " ============================================================================== "
+	echo "|     Select Applications                                                      |"
+	echo "|     Select Repositories                                                      |"
+	echo "|     Select Setting And Tweaks                                                |"
+	echo "|     Get Updates                                                              |"
+	echo "|     Add Selected Repositories                                                |"
+	echo "| ADDING TOOLS FROM GIT                                                        |"
+	echo "|     Add Tools From Apt-Get                                                   |"
+	echo "|     Add Tweaks and Settings                                                  |"
+	echo "|     Clean Up The Mess                                                        |"
+	echo " ============================================================================== "
 	echo ""
 sudo sh ./gitstall.sh 
 	echo "<><><><><> Finished With The Github Apps. <><><><><>"
 
 #Install from apt-get
 	echo ""
-	echo " ================================================================================= "
-	echo "|     Selecting Applications                                                      |"
-	echo "|     Selecting Repositories                                                      |"
-	echo "|     Selecting Setting And Tweaks                                                |"
-	echo "|     Getting Updates                                                             |"
-	echo "|     Adding Selected Repositories                                                |"
-	echo "|     Adding Applications with Git                                                |"
-	echo "| Adding Applicaitons with Apt-Get                                                |"
-	echo "|     Adding Tweaks and Settings                                                  |"
-	echo "|     Cleaning Up The Mess                                                        |"
-	echo " ================================================================================= "
+	echo " ============================================================================== "
+	echo "|     Select Applications                                                      |"
+	echo "|     Select Repositories                                                      |"
+	echo "|     Select Setting And Tweaks                                                |"
+	echo "|     Get Updates                                                              |"
+	echo "|     Add Selected Repositories                                                |"
+	echo "|     Add Tools From Git                                                       |"
+	echo "| ADDING TOOLS FROM APT_GET                                                    |"
+	echo "|     Add Tweaks and Settings                                                  |"
+	echo "|     Clean Up The Mess                                                        |"
+	echo " ============================================================================== "
 	echo ""
 sudo sh ./aptstall.sh 
 	echo "<><><><><> Done With All Apps.            <><><><><>" 
 
 #Adding Additional Settings
 	echo ""
-	echo " ================================================================================= "
-	echo "|     Selecting Applications                                                      |"
-	echo "|     Selecting Repositories                                                      |"
-	echo "|     Selecting Setting And Tweaks                                                |"
-	echo "|     Getting Updates                                                             |"
-	echo "|     Adding Selected Repositories                                                |"
-	echo "|     Adding Applications with Git                                                |"
-	echo "|     Adding Applicaitons with Apt-Get                                            |"
-	echo "| Adding Tweaks and Settings                                                      |"
-	echo "|     Cleaning Up The Mess                                                        |"
-	echo " ================================================================================= "
+	echo " ============================================================================== "
+	echo "|     Select Applications                                                      |"
+	echo "|     Select Repositories                                                      |"
+	echo "|     Select Setting And Tweaks                                                |"
+	echo "|     Get Updates                                                              |"
+	echo "|     Add Selected Repositories                                                |"
+	echo "|     Add Tools From Git                                                       |"
+	echo "|     Add Tools From Apt-Get                                                   |"
+	echo "| ADDING TWEAKS AND SETTINGS                                                   |"
+	echo "|     Clean Up The Mess                                                        |"
+	echo " ============================================================================== "
 	echo ""
 
 #clean Things up
 	echo ""
-	echo " ================================================================================= "
-	echo "|     Selecting Applications                                                      |"
-	echo "|     Selecting Repositories                                                      |"
-	echo "|     Selecting Setting And Tweaks                                                |"
-	echo "|     Getting Updates                                                             |"
-	echo "|     Adding Selected Repositories                                                |"
-	echo "|     Adding Applications with Git                                                |"
-	echo "|     Adding Applicaitons with Apt-Get                                            |"
-	echo "|     Adding Tweaks and Settings                                                  |"
-	echo "| Cleaning Up The Mess                                                            |"
+	echo " ============================================================================== "
+	echo "|     Select Applications                                                      |"
+	echo "|     Select Repositories                                                      |"
+	echo "|     Select Setting And Tweaks                                                |"
+	echo "|     Get Updates                                                              |"
+	echo "|     Add Selected Repositories                                                |"
+	echo "|     Add Tools From Git                                                       |"
+	echo "|     Add Tools From Apt-Get                                                   |"
+	echo "|     Add Tweaks and Settings                                                  |"
+	echo "| Cleaning UP THE MESS                                                         |"
 	echo " ================================================================================= "
 	echo ""
 sudo apt autoremove
